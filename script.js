@@ -1,16 +1,21 @@
 const utterance = new SpeechSynthesisUtterance();
+const read = document.querySelector('#read')
+
 
 utterance.lang = "pt-BR";
-utterance.rate = 2;
+utterance.rate = 1.8;
+
 
 function speak() {
-	speechSynthesis.speak(utterance);
+    utterance.text = read.value
+    if (utterance.text.length > 0) {
+        speechSynthesis.speak(utterance);
+    } else {
+        utterance.text = 'Oi meu amigo! insira um texto para continuar'
+        speechSynthesis.speak(utterance);
+    }
 }
 
 function stop() {
-  speechSynthesis.cancel();
-}
-
-function setText(event) {
-	utterance.text = event.target.innerText;
+    speechSynthesis.cancel();
 }

@@ -1,1 +1,101 @@
-@import "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css";
+:root {
+    font-size: 62.5%;
+}
+
+textarea {
+    outline: none;
+    border: 0;
+    box-shadow: rgba(204, 204, 204, 0.452) 1px 1px 10px 1px;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+header {
+    margin-top: 2rem;
+    border: 1px solid #ccc;
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    margin-top: 2rem;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-radius: 1rem;
+    border-color: #ccc;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: .5rem;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box.id1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 25rem;
+}
+
+.text {
+    box-sizing: border-box;
+    padding: 2rem;
+    font-size: 1.5rem;
+    outline: none;
+    width: 100%;
+    height: 16rem;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+}
+
+.box button {
+    border: 0;
+    width: 15rem;
+    height: 5rem;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#bspeak {
+    background-color: rgb(33, 126, 37);
+}
+
+#bspeak:hover {
+    background-color: rgb(41, 155, 47);
+}
+
+#bstop {
+    background-color: rgb(219, 41, 41);
+}
+
+#bstop:hover {
+    background-color: rgb(252, 21, 21);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
